@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+#template {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+}
+
+header .button {
+  margin: auto;
+  margin-top: 30px;
+  margin-right: 100px;
+  display: flex;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  color: #333333;
+}
+
+header .button p {
+  margin: auto;
+}
+
+header .button i {
+  margin: auto;
+  margin-left: 10px;
+  width: 24px;
+}
+
+header .button:hover {
+  cursor: pointer;
+}
+
+main {
+  margin: 0 300px;
+  margin-bottom: 100px;
+}
+
+main .quote p {
+  margin: auto;
+  width: 620px;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 120%;
+}
+
+main .quote {
+  margin-bottom: 140px;
+  display: flex;
+}
+
+main  .quote .bar {
+  width: 8px;
+  background-color: #F7DF94;
+}
+
+main .randomQuote {
+  margin-top: 227px;
+}
+
+main .randomQuote .quote-author {
+  width: 620px;
+  margin: auto;
+  padding: 50px 30px;
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.5s ease;
+}
+
+main .randomQuote .quote-author:hover {
+  cursor: pointer;
+  background-color: #333333;
+
+}
+
+main .randomQuote .quote-author .quote-author-name {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #4F4F4F;
+  margin-bottom: 8px;
+  transition: all 0.5s ease;
+}
+
+main .randomQuote .quote-author:hover .quote-author-name {
+  color: #F2F2F2;
+}
+
+main .randomQuote .quote-author .quote-author-genre {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #828282;
+}
+
+main .randomQuote .quote-author i {
+  display: none;
+  margin: auto 0;
+  transition: all 0.5s ease;
+}
+
+main .randomQuote .quote-author:hover i {
+  display: block;
+  color: #F2F2F2;
+  width: 24px;
+}
+
+main .randomQuote .quote {
+  margin-bottom: 100px;
+}
+
+main .authorQuotes {
+  display: flex;
+  flex-direction: column;
+}
+
+main .authorQuotes h2 {
+  width: 620px;
+  margin: auto;
+  margin-top: 48px;
+  margin-bottom: 140px;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  color: #333333;
+}
+
+footer {
+  display: flex;
+  margin-top: auto;
+}
+
+footer p {
+  margin: auto;
+  margin-bottom: 20px;
+}

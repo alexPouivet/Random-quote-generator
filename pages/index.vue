@@ -1,26 +1,30 @@
 <template>
   <div id="template">
     <header>
-      <button type="button" name="button" @click="callRandomQuote()">random</button>
+      <div class="button">
+        <p @click="callRandomQuote()">random</p>
+        <i class="material-icons">autorenew</i>
+      </div>
     </header>
     <main>
-      <div>
-        <h1>Random quote generator</h1>
-        <div class="randomQuote" v-if="randomQuote">
-          <div class="quote">
-            <p>{{randomQuote.quoteText}}</p>
-          </div>
-          <div class="quote-author">
-            <button type="button" name="button" @click="quotesAuthor(randomQuote.quoteAuthor)">All quote from {{randomQuote.quoteAuthor}}</button>
-            <p>{{randomQuote.quoteGenre}}</p>
-          </div>
+      <div class="randomQuote" v-if="randomQuote">
+        <div class="quote">
+          <div class="bar"></div>
+          <p>{{randomQuote.quoteText}}</p>
         </div>
-        <div class="authorQuotes" v-if="authorQuotes">
-          <h3>Author Quotes</h3>
-          <h2>{{authorName}}</h2>
-          <div class="quote" v-for="(quote, index) in authorQuotes" :key="index">
-            <p>{{quote.quoteText}}</p>
+        <div class="quote-author" @click="quotesAuthor(randomQuote.quoteAuthor)">
+          <div>
+            <p class="quote-author-name">{{randomQuote.quoteAuthor}}</p>
+            <p class="quote-author-genre">{{randomQuote.quoteGenre}}</p>
           </div>
+          <i class="material-icons">arrow_forward</i>
+        </div>
+      </div>
+      <div class="authorQuotes" v-if="authorQuotes">
+        <h2>{{authorName}}</h2>
+        <div class="quote" v-for="(quote, index) in authorQuotes" :key="index">
+          <div class="bar"></div>
+          <p>{{quote.quoteText}}</p>
         </div>
       </div>
     </main>
